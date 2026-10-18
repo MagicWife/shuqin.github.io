@@ -204,3 +204,17 @@ footer p { margin-bottom: 8px; }
   .original-experience-table td:last-child { grid-column: 2; min-width: 0; }
   .original-experience-table img { max-width: 105px; height: auto; }
 }
+
+/* Three current research areas, highlighted within the academic layout. */
+#research > .section-heading h2 { margin-bottom: 8px; }
+.research-tagline { margin: 0; color: #444; }
+.research-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 24px; }
+.research-grid article { min-width: 0; margin: 0; padding: 22px 20px; border: 1px solid #dce6ef; border-top: 3px solid #1772d0; background: #f5f9fd; }
+.research-grid .research-number { display: block; margin-bottom: 14px; color: #1772d0; font-size: 14px; font-weight: 700; }
+.research-grid h3 { min-height: 48px; margin-bottom: 12px; font-size: 18px; line-height: 1.35; font-weight: 700; }
+.research-grid p { margin: 0; font-size: 15px; line-height: 1.65; color: #263b4d; }
+@media (max-width: 650px) {
+  .research-grid { grid-template-columns: 1fr; gap: 14px; }
+  .research-grid h3 { min-height: 0; }
+}
+@media print { .research-grid article { break-inside: avoid; } }
