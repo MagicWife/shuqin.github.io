@@ -189,3 +189,18 @@ footer p { margin-bottom: 8px; }
   .intro { font-size: 21px; }
 }
 @media print { .education-row { break-inside: avoid; } }
+
+/* The original combined education and work experience display. */
+.original-experience-table { border-collapse: separate; border-spacing: 0; }
+.original-experience-table td { vertical-align: middle; }
+.original-experience-table td:last-child { min-width: 155px; }
+.original-experience-table img { object-fit: contain; max-width: none; }
+@media (max-width: 650px) {
+  .original-experience-table { padding-left: 0 !important; }
+  .original-experience-table tbody { display: block; }
+  .original-experience-table tr { display: grid; grid-template-columns: 105px minmax(0, 1fr); gap: 5px 16px; margin-bottom: 24px; }
+  .original-experience-table td { display: block; width: auto; padding: 0; }
+  .original-experience-table td:first-child { grid-row: span 2; align-self: center; }
+  .original-experience-table td:last-child { grid-column: 2; min-width: 0; }
+  .original-experience-table img { max-width: 105px; height: auto; }
+}
