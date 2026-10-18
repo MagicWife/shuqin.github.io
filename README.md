@@ -14,8 +14,8 @@ Run `python -m http.server 8766` from this directory and open `http://localhost:
 
 ## Content maintenance
 
-The October 2026 update reconciles the supplied English and Chinese CVs. Publisher and CityUHK records take precedence for final publication titles and bibliographic details. Under-review manuscripts and conference work with forthcoming publication details are labeled explicitly. Hong Kong and Shenzhen company appointments are listed separately using the dates in their respective CVs.
+The October 2026 update reconciles the supplied English and Chinese CVs. Publisher and CityUHK records take precedence for final publication titles and bibliographic details. The under-review IEEE TIM manuscript has been removed from the public listing. The APMC 2026 LBN paper is labeled accepted. Hong Kong and Shenzhen company appointments are listed separately using the dates in their respective CVs.
 
-Update publication metadata and links in `index.html`; use `data-kind="journal"`, `"conference"`, or `"review"` for filtering. Update the page's visible revision date and `sitemap.xml` when making substantive changes.
+Update publication metadata and links in `index.html`; use `data-kind="journal"`, or `"conference"` for filtering. Update the page's visible revision date and `sitemap.xml` when making substantive changes.
 
-Before publishing, check mobile and desktop layouts, all four publication filters, both CV links, local images and section anchors. Run `node --check script.js` and `git diff --check`.
+Before publishing, check mobile and desktop layouts, all three publication filters, both CV links, local images and section anchors. Run `node --check script.js` and `git diff --check`.
