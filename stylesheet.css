@@ -172,3 +172,20 @@ footer p { margin-bottom: 8px; }
   .paper, .timeline-row, .award-list li, .text-entry { break-inside: avoid; }
   main, footer { max-width: none; }
 }
+
+/* Expressive introductory line and education at the top of the profile. */
+.intro { font-family: Georgia, 'Times New Roman', serif; font-size: 22px; line-height: 1.45; }
+.intro br { display: initial; }
+.intro em { font-style: italic; color: #1772d0; }
+.education-row { display: grid; grid-template-columns: 135px 165px minmax(0, 1fr); gap: 20px; align-items: center; margin: 0 0 26px; }
+.university-logo { display: block; width: 130px; max-width: 100%; height: 65px; object-fit: contain; }
+.education-row h3 { font-size: 16px; margin-bottom: 5px; }
+.education-row p { margin-bottom: 5px; }
+@media (max-width: 650px) {
+  .education-row { grid-template-columns: 95px minmax(0, 1fr); gap: 6px 16px; align-items: start; }
+  .university-logo { grid-row: span 2; width: 95px; height: 60px; }
+  .education-row > .date { grid-column: 2; }
+  .education-row > div { grid-column: 2; }
+  .intro { font-size: 21px; }
+}
+@media print { .education-row { break-inside: avoid; } }
